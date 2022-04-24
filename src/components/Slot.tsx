@@ -12,7 +12,7 @@ type PropsType = {
 
 const Slot: React.FC<PropsType> = ({ time, status }) =>
   <StyledSlot status={status}>
-    { moment(time).format('hh:mm')}
+    { moment(time).format('HH:mm')}
   </StyledSlot>
 
 export default React.memo(Slot)
